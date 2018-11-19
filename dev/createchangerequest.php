@@ -91,7 +91,7 @@ require "createProjectController.php";
                 <h4>Description</h4>
                 <textarea class="closed-project_description" name="closed-project_description"></textarea>
 
-                <h4>Attached File</h4>
+                <h4>Attach File</h4>
 
                 <div class="file-upload">
                   <div class="file-select">

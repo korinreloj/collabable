@@ -9,7 +9,7 @@ main{
     
   @include tablet{
   	margin-left: 15vw;
-  	margin-right: 3vw;
+  	margin-right: 1vw;
     max-width: rem(300);
     width: 25vw;
   }
@@ -27,11 +27,11 @@ main{
 	@include tablet{
 		margin-top: 0;
   	margin-left: 21vw;
-		grid-template-columns: auto auto;    	
+		grid-template-columns: 35vw 35vw;    	
 	}
 
   @include desktop{
-		grid-template-columns: auto auto auto;
+		grid-template-columns: 24.5vw 24.5vw 24.5vw;
   }
 
   .open-project{
