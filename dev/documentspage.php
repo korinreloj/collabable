@@ -39,7 +39,7 @@
             COLLABABLE
         </div>
         <h4 class="member_name">
-            <a href="profilesettings.php"><?php echo $_SESSION['userName']; ?>
+            <a href="profilesettings.php"><<!-- ?php echo $_SESSION['userName']; ?> -->
                 <img src="assets/images/edit_icon.png" class="edit_icon"></a>
         </h4>
         <div class="sidebar_divider"></div>
@@ -50,9 +50,9 @@
                 <li class=""><a href="">Project Details</a></li>
                 <li class=""><a href="">Task Boards</a></li>
                 <li class=""><a href="">Calendar</a></li>
-                <li class="active_tab"><a href="">Change Requests</a></li>
+                <li class=""><a href="">Change Requests</a></li>
                 <li class=""><a href="">Chat Room</a></li>
-                <li class=""><a href="">Documents</a></li>
+                <li class="active_tab"><a href="">Documents</a></li>
             </ul>
         </div>
         <a href="index.php">
@@ -70,38 +70,28 @@
             <div class="dot_pattern"></div>
         </div>
 
-        <div class="project_header">
-            <h2 class="module_title change_title">Change Requests</h2>
-            <a href=""><button class="default_button page_button change_button" >Create Change Request</button></a>
+        <div class="project_header document_header">
+            <h2 class="module_title">Documents</h2>
+            <a href=""><button class="default_button page_button upload_button" >Upload File</button></a>
         </div>
 
-        <div class="change_requests">
-            <div class="request_form">
-                <div class="form_title request_title">
-                    [Change Request Title]
-                </div>
-                <div class="form_content request_content">
-                    <h4>Created by: @aloychua</h4>
-                    <h4>Date Created: 11/21/2018</h4>             
-                </div>
-                <div class="view_button">
-                    <a href=""><h4>View</h4></a>
-                </div>
-            </div>
+        <div class="document_layout">
+            <input type="text" name="search_document" class="search_document" placeholder="Search Documents...">
 
-            <div class="request_form">
-                <div class="form_title request_title">
-                    [Change Request Title]
+            <div class="document_container">
+                
+                <div class="document_card">
+                    <div class="icon_container">
+                        <img src="assets/images/file_icon.png">
+                    </div>
+                    
+                    <div class="document_name">
+                        Blueprint.docx
+                        <img src="assets/images/download_icon.png">
+                    </div>
                 </div>
-                <div class="form_content request_content">
-                    <h4>Created by: @aloychua</h4>
-                    <h4>Date Created: 11/21/2018</h4>             
-                </div>
-                <div class="view_button">
-                    <a href=""><h4>View</h4></a>
-                </div>
+
             </div>
-            
         </div>
 
     </div>

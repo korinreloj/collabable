@@ -212,6 +212,10 @@
     margin-left: 5vw;
     width: 30vw;
   }
+
+  @include desktop{
+    margin-left: 15vw;
+  }
 }
 
 .back_button{
@@ -221,5 +225,36 @@
 
   @include desktop{
     margin-left: 15vw;
+  }
+}
+
+.change_title{
+  @include tablet{
+    margin-bottom: rem(36); 
+  }
+}
+
+.upload_title{
+  margin-top: 5vh;
+
+  @include tablet{    
+    padding: rem(18) rem(60);
+    margin-left: 27vw;
+  }
+  
+  @include desktop{
+    margin-left: 29vw;
+  }
+}
+
+.upload_content{
+
+  @include tablet{
+    padding: rem(60);
+    margin-left: 27vw;
+  }
+
+  @include desktop{
+    margin-left: 29vw;
   }
 }

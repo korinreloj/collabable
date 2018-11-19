@@ -39,7 +39,7 @@
             COLLABABLE
         </div>
         <h4 class="member_name">
-            <a href="profilesettings.php"><?php echo $_SESSION['userName']; ?>
+            <a href="profilesettings.php"><<!-- ?php echo $_SESSION['userName']; ?> -->
                 <img src="assets/images/edit_icon.png" class="edit_icon"></a>
         </h4>
         <div class="sidebar_divider"></div>
@@ -50,9 +50,9 @@
                 <li class=""><a href="">Project Details</a></li>
                 <li class=""><a href="">Task Boards</a></li>
                 <li class=""><a href="">Calendar</a></li>
-                <li class="active_tab"><a href="">Change Requests</a></li>
+                <li class=""><a href="">Change Requests</a></li>
                 <li class=""><a href="">Chat Room</a></li>
-                <li class=""><a href="">Documents</a></li>
+                <li class="active_tab"><a href="">Documents</a></li>
             </ul>
         </div>
         <a href="index.php">
@@ -70,40 +70,48 @@
             <div class="dot_pattern"></div>
         </div>
 
-        <div class="project_header">
-            <h2 class="module_title change_title">Change Requests</h2>
-            <a href=""><button class="default_button page_button change_button" >Create Change Request</button></a>
+        <div class="project_header document_header">
+            <h2 class="module_title">Documents</h2>
+            <a href=""><button class="default_button page_button upload_button" >Go Back</button></a>
         </div>
 
-        <div class="change_requests">
-            <div class="request_form">
-                <div class="form_title request_title">
-                    [Change Request Title]
+
+        <form method="POST">
+            <div class="form_title upload_title">
+                Upload File
+            </div>
+            <div class="form_content approval_content upload_content">
+                <h4>Attach File</h4>
+
+                <div class="file-upload">
+                  <div class="file-select">
+                    <div class="file-select-button" id="fileName">Choose File</div>
+                    <div class="file-select-name" id="noFile">No file chosen...</div> 
+                    <input type="file" name="chooseFile" id="chooseFile">
+                  </div>
                 </div>
-                <div class="form_content request_content">
-                    <h4>Created by: @aloychua</h4>
-                    <h4>Date Created: 11/21/2018</h4>             
-                </div>
-                <div class="view_button">
-                    <a href=""><h4>View</h4></a>
+
+                <script type="text/javascript">
+                    $('#chooseFile').bind('change', function () {
+                      var filename = $("#chooseFile").val();
+                      if (/^\s*$/.test(filename)) {
+                        $(".file-upload").removeClass('active');
+                        $("#noFile").text("No file chosen..."); 
+                      }
+                      else {
+                        $(".file-upload").addClass('active');
+                        $("#noFile").text(filename.replace("C:\\fakepath\\", "")); 
+                      }
+                    });
+
+                </script>
+                <div class="form_buttons">
+                    <button class="cancel_project">Cancel</button>
+
+                    <button class="create_project" type="submit" id="submit" name="submit">Upload</button>
                 </div>
             </div>
-
-            <div class="request_form">
-                <div class="form_title request_title">
-                    [Change Request Title]
-                </div>
-                <div class="form_content request_content">
-                    <h4>Created by: @aloychua</h4>
-                    <h4>Date Created: 11/21/2018</h4>             
-                </div>
-                <div class="view_button">
-                    <a href=""><h4>View</h4></a>
-                </div>
-            </div>
-            
-        </div>
-
+        </form>
     </div>
 </main>
 
