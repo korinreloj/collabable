@@ -175,3 +175,23 @@
 .update_content > .save_changes{
 	margin-top: rem(85);
 }
+
+.upload_content > .deactivate_user-msg{
+	font-size: rem(14);
+	text-align: center;
+	padding-top: rem(20);
+
+	@include tablet{
+		font-size: rem(16);
+	}
+}
+
+.goback_deact{
+	@include tablet{
+		margin-left: 24vw;
+	}
+
+	@include desktop{
+		margin-left: 34vw;
+	}
+}

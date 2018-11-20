@@ -757,6 +757,21 @@ main {
 .update_content > .save_changes {
   margin-top: 5.3125rem; }
 
+.upload_content > .deactivate_user-msg {
+  font-size: 0.875rem;
+  text-align: center;
+  padding-top: 1.25rem; }
+  @media (min-width: 768px) {
+    .upload_content > .deactivate_user-msg {
+      font-size: 1rem; } }
+
+@media (min-width: 768px) {
+  .goback_deact {
+    margin-left: 24vw; } }
+@media (min-width: 1200px) {
+  .goback_deact {
+    margin-left: 34vw; } }
+
 .doughnut_chart {
   display: block;
   margin-top: 1.875rem; }
