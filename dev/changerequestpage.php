@@ -73,7 +73,7 @@
         </div>
 
         <div class="project_header">
-            <h2 class="module_title">Change Requests</h2>
+            <h2 class="module_title change_title">Change Requests</h2>
             <a href=""><button class="default_button page_button change_button" >Create Change Request</button></a>
         </div>
 

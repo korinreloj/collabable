@@ -359,7 +359,7 @@ main {
   @media (min-width: 768px) {
     .page_button {
       margin-left: 15vw;
-      margin-right: 3vw;
+      margin-right: 1vw;
       max-width: 18.75rem;
       width: 25vw; } }
 
@@ -374,10 +374,10 @@ main {
     .project_cards {
       margin-top: 0;
       margin-left: 21vw;
-      grid-template-columns: auto auto; } }
+      grid-template-columns: 35vw 35vw; } }
   @media (min-width: 1200px) {
     .project_cards {
-      grid-template-columns: auto auto auto; } }
+      grid-template-columns: 24.5vw 24.5vw 24.5vw; } }
   .project_cards .open-project {
     background-color: #ef5145ff;
     margin: 1.5625rem;
@@ -759,6 +759,21 @@ main {
 .update_content > .save_changes {
   margin-top: 5.3125rem; }
 
+.upload_content > .deactivate_user-msg {
+  font-size: 0.875rem;
+  text-align: center;
+  padding-top: 1.25rem; }
+  @media (min-width: 768px) {
+    .upload_content > .deactivate_user-msg {
+      font-size: 1rem; } }
+
+@media (min-width: 768px) {
+  .goback_deact {
+    margin-left: 24vw; } }
+@media (min-width: 1200px) {
+  .goback_deact {
+    margin-left: 34vw; } }
+
 .doughnut_chart {
   display: block;
   margin-top: 1.875rem; }
@@ -875,7 +890,7 @@ main {
   margin-top: 0.9375rem;
   margin-bottom: 0; }
   .agreements input {
-    width: 2.1875rem; }
+    width: 8vw; }
   .agreements h4 {
     margin-top: 0;
     margin-left: 4vw;
@@ -1146,5 +1161,109 @@ main {
 
 .approved_card {
   background-color: #ef5145ff; }
+  @media (min-width: 768px) {
+    .approved_card .change_title {
+      margin-bottom: 2.25rem; } }
+  .approved_card .upload_title {
+    margin-top: 5vh; }
+    @media (min-width: 768px) {
+      .approved_card .upload_title {
+        padding: 1.125rem 3.75rem;
+        margin-left: 27vw; } }
+    @media (min-width: 1200px) {
+      .approved_card .upload_title {
+        margin-left: 29vw; } }
+  @media (min-width: 768px) {
+    .approved_card .upload_content {
+      padding: 3.75rem;
+      margin-left: 27vw; } }
+  @media (min-width: 1200px) {
+    .approved_card .upload_content {
+      margin-left: 29vw; } }
+
+@media (min-width: 768px) {
+  .upload_button {
+    margin-left: 8vw; } }
+@media (min-width: 1200px) {
+  .upload_button {
+    margin-left: 23vw; } }
+
+.document_header {
+  margin-left: -7vw; }
+  @media (min-width: 768px) {
+    .document_header {
+      margin-left: 22vw; } }
+
+.document_layout {
+  margin-top: 2rem; }
+  @media (min-width: 768px) {
+    .document_layout {
+      width: 45vw;
+      margin-left: 20vw;
+      padding: 1.2375rem; }
+      .document_layout input {
+        width: 45vw; } }
+  .document_layout input[name="search_document"] {
+    font-size: 0.875rem;
+    font-family: "Montserrat", sans-serif;
+    background-color: red;
+    width: 76vw;
+    border: none;
+    background-color: #e8e8e8;
+    height: 1.25rem;
+    padding: 0.9375rem;
+    display: flex; }
+    @media (min-width: 768px) {
+      .document_layout input[name="search_document"] {
+        width: 69vw; } }
+    @media (min-width: 1200px) {
+      .document_layout input[name="search_document"] {
+        font-size: 1rem;
+        padding: 1.125rem;
+        width: 71vw; } }
+  .document_layout .document_container {
+    display: block;
+    width: 76vw;
+    margin-top: 3rem; }
+    @media (min-width: 768px) {
+      .document_layout .document_container {
+        display: grid;
+        width: 0;
+        grid-template-columns: 36vw 36vw; } }
+    @media (min-width: 1200px) {
+      .document_layout .document_container {
+        grid-template-columns: 38vw 38vw; } }
+    .document_layout .document_container .document_card {
+      margin-bottom: 2.5rem;
+      box-shadow: 0.9375rem 0.625rem rgba(0, 0, 0, 0.2); }
+      @media (min-width: 768px) {
+        .document_layout .document_container .document_card {
+          width: 32vw;
+          margin-right: 5vw; } }
+      .document_layout .document_container .document_card .icon_container {
+        background-color: #e8e8e8; }
+        .document_layout .document_container .document_card .icon_container img {
+          width: 32vw; }
+          @media (min-width: 768px) {
+            .document_layout .document_container .document_card .icon_container img {
+              width: 6.25rem; } }
+          @media (min-width: 1200px) {
+            .document_layout .document_container .document_card .icon_container img {
+              width: 8.75rem; } }
+      .document_layout .document_container .document_card .document_name {
+        display: inline-flex;
+        color: #fff;
+        font-size: 0.875rem;
+        font-family: "Montserrat", sans-serif;
+        line-height: 2.8125rem;
+        background-color: #ef5145ff;
+        width: 76vw;
+        justify-content: center; }
+        @media (min-width: 768px) {
+          .document_layout .document_container .document_card .document_name {
+            width: 32vw; } }
+        .document_layout .document_container .document_card .document_name img {
+          height: 1.125rem;
+          padding: 0.8125rem; }
 
 /*# sourceMappingURL=app.css.map */

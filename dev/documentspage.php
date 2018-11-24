@@ -1,8 +1,3 @@
-<?php
-session_start();
-require "createProjectController.php";
-?>
-
 <html>
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -44,7 +39,7 @@ require "createProjectController.php";
             COLLABABLE
         </div>
         <h4 class="member_name">
-            <a href="profilesettings.php"><?php echo $_SESSION['userName']; ?>
+            <a href="profilesettings.php"><<!-- ?php echo $_SESSION['userName']; ?> -->
                 <img src="assets/images/edit_icon.png" class="edit_icon"></a>
         </h4>
         <div class="sidebar_divider"></div>
@@ -55,9 +50,9 @@ require "createProjectController.php";
                 <li class=""><a href="">Project Details</a></li>
                 <li class=""><a href="">Task Boards</a></li>
                 <li class=""><a href="">Calendar</a></li>
-                <li class="active_tab"><a href="">Change Requests</a></li>
+                <li class=""><a href="">Change Requests</a></li>
                 <li class=""><a href="">Chat Room</a></li>
-                <li class=""><a href="">Documents</a></li>
+                <li class="active_tab"><a href="">Documents</a></li>
             </ul>
         </div>
         <a href="index.php">
@@ -68,60 +63,36 @@ require "createProjectController.php";
 
     </div>
 
-    <div class="main_page no-button">
+    <div class="main_page">
         <div class="horizontal_line fixed_line"></div>
 
         <div class ="line_layout fixed_line">
             <div class="dot_pattern"></div>
-            <div class="project_header">
-            <h2 class="module_title">Change Requests</h2>
         </div>
 
+        <div class="project_header document_header">
+            <h2 class="module_title">Documents</h2>
+            <a href=""><button class="default_button page_button upload_button" >Upload File</button></a>
         </div>
 
-        
-        <form method="POST">
-            <div class="form_title">
-                Create Change Request
-            </div>
-            <div class="form_content approval_content">
-                <h4>Title</h4>
-                <input type="text" name="closed-project_title" id="closed-project_title" value="">
+        <div class="document_layout">
+            <input type="text" name="search_document" class="search_document" placeholder="Search Documents...">
 
-                <h4>Description</h4>
-                <textarea class="closed-project_description" name="closed-project_description"></textarea>
-
-                <h4>Attach File</h4>
-
-                <div class="file-upload">
-                  <div class="file-select">
-                    <div class="file-select-button" id="fileName">Choose File</div>
-                    <div class="file-select-name" id="noFile">No file chosen...</div> 
-                    <input type="file" name="chooseFile" id="chooseFile">
-                  </div>
+            <div class="document_container">
+                
+                <div class="document_card">
+                    <div class="icon_container">
+                        <img src="assets/images/file_icon.png">
+                    </div>
+                    
+                    <div class="document_name">
+                        Blueprint.docx
+                        <img src="assets/images/download_icon.png">
+                    </div>
                 </div>
 
-                <script type="text/javascript">
-                    $('#chooseFile').bind('change', function () {
-                      var filename = $("#chooseFile").val();
-                      if (/^\s*$/.test(filename)) {
-                        $(".file-upload").removeClass('active');
-                        $("#noFile").text("No file chosen..."); 
-                      }
-                      else {
-                        $(".file-upload").addClass('active');
-                        $("#noFile").text(filename.replace("C:\\fakepath\\", "")); 
-                      }
-                    });
-
-                </script>
-                <div class="form_buttons">
-                    <button class="cancel_project">Cancel</button>
-
-                    <button class="create_project" type="submit" id="submit" name="submit">Confirm</button>
-                </div>
             </div>
-        </form>
+        </div>
 
     </div>
 </main>

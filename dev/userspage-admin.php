@@ -89,177 +89,12 @@ require "createProjectController.php";
                         <td>09562368873</td>
                         <td>Leader</td>
                         <td><button class="update_user">Update</button></td>
-                        <td><button class="deactivate_user">Deactivate</button></td>
+                        <td><button class="deactivate_user" onclick="myFunction()">Deactivate</button></td>
                     </tr>
                     <tr>
                         <td>1</td>
                         <td>Corinne Reloj</td>
                         <td>corinnereloj</td>
-                        <td>dw/126^@92SJK_0</td>
-                        <td>relojcorinne@gmail.com</td>
-                        <td>09562368873</td>
-                        <td>Leader</td>
-                        <td><button class="update_user">Update</button></td>
-                        <td><button class="deactivate_user">Deactivate</button></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Annyeong</td>
-                        <td>eyyy</td>
-                        <td>dw/126^@92SJK_0</td>
-                        <td>relojcorinne@gmail.com</td>
-                        <td>09562368873</td>
-                        <td>Leader</td>
-                        <td><button class="update_user">Update</button></td>
-                        <td><button class="deactivate_user">Deactivate</button></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Annyeong</td>
-                        <td>eyyy</td>
-                        <td>dw/126^@92SJK_0</td>
-                        <td>relojcorinne@gmail.com</td>
-                        <td>09562368873</td>
-                        <td>April</td>
-                        <td><button class="update_user">Update</button></td>
-                        <td><button class="deactivate_user">Deactivate</button></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Annyeong</td>
-                        <td>eyyy</td>
-                        <td>dw/126^@92SJK_0</td>
-                        <td>relojcorinne@gmail.com</td>
-                        <td>09562368873</td>
-                        <td>Leader</td>
-                        <td><button class="update_user">Update</button></td>
-                        <td><button class="deactivate_user">Deactivate</button></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Annyeong</td>
-                        <td>eyyy</td>
-                        <td>dw/126^@92SJK_0</td>
-                        <td>relojcorinne@gmail.com</td>
-                        <td>09562368873</td>
-                        <td>Leader</td>
-                        <td><button class="update_user">Update</button></td>
-                        <td><button class="deactivate_user">Deactivate</button></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Annyeong</td>
-                        <td>eyyy</td>
-                        <td>dw/126^@92SJK_0</td>
-                        <td>relojcorinne@gmail.com</td>
-                        <td>09562368873</td>
-                        <td>Leader</td>
-                        <td><button class="update_user">Update</button></td>
-                        <td><button class="deactivate_user">Deactivate</button></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Annyeong</td>
-                        <td>eyyy</td>
-                        <td>dw/126^@92SJK_0</td>
-                        <td>relojcorinne@gmail.com</td>
-                        <td>09562368873</td>
-                        <td>Leader</td>
-                        <td><button class="update_user">Update</button></td>
-                        <td><button class="deactivate_user">Deactivate</button></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Annyeong</td>
-                        <td>eyyy</td>
-                        <td>dw/126^@92SJK_0</td>
-                        <td>relojcorinne@gmail.com</td>
-                        <td>09562368873</td>
-                        <td>Leader</td>
-                        <td><button class="update_user">Update</button></td>
-                        <td><button class="deactivate_user">Deactivate</button></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Annyeong</td>
-                        <td>eyyy</td>
-                        <td>dw/126^@92SJK_0</td>
-                        <td>relojcorinne@gmail.com</td>
-                        <td>09562368873</td>
-                        <td>Leader</td>
-                        <td><button class="update_user">Update</button></td>
-                        <td><button class="deactivate_user">Deactivate</button></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Annyeong</td>
-                        <td>eyyy</td>
-                        <td>dw/126^@92SJK_0</td>
-                        <td>relojcorinne@gmail.com</td>
-                        <td>09562368873</td>
-                        <td>Leader</td>
-                        <td><button class="update_user">Update</button></td>
-                        <td><button class="deactivate_user">Deactivate</button></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Annyeong</td>
-                        <td>eyyy</td>
-                        <td>dw/126^@92SJK_0</td>
-                        <td>relojcorinne@gmail.com</td>
-                        <td>09562368873</td>
-                        <td>Leader</td>
-                        <td><button class="update_user">Update</button></td>
-                        <td><button class="deactivate_user">Deactivate</button></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Annyeong</td>
-                        <td>eyyy</td>
-                        <td>dw/126^@92SJK_0</td>
-                        <td>relojcorinne@gmail.com</td>
-                        <td>09562368873</td>
-                        <td>Leader</td>
-                        <td><button class="update_user">Update</button></td>
-                        <td><button class="deactivate_user">Deactivate</button></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Annyeong</td>
-                        <td>eyyy</td>
-                        <td>dw/126^@92SJK_0</td>
-                        <td>relojcorinne@gmail.com</td>
-                        <td>09562368873</td>
-                        <td>Leader</td>
-                        <td><button class="update_user">Update</button></td>
-                        <td><button class="deactivate_user">Deactivate</button></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Annyeong</td>
-                        <td>eyyy</td>
-                        <td>dw/126^@92SJK_0</td>
-                        <td>relojcorinne@gmail.com</td>
-                        <td>09562368873</td>
-                        <td>Leader</td>
-                        <td><button class="update_user">Update</button></td>
-                        <td><button class="deactivate_user">Deactivate</button></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Annyeong</td>
-                        <td>eyyy</td>
-                        <td>dw/126^@92SJK_0</td>
-                        <td>relojcorinne@gmail.com</td>
-                        <td>09562368873</td>
-                        <td>Leader</td>
-                        <td><button class="update_user">Update</button></td>
-                        <td><button class="deactivate_user">Deactivate</button></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Annyeong</td>
-                        <td>eyyy</td>
                         <td>dw/126^@92SJK_0</td>
                         <td>relojcorinne@gmail.com</td>
                         <td>09562368873</td>
@@ -290,6 +125,10 @@ require "createProjectController.php";
 </main>
 
 <script src="assets/scripts/sidebar.js"></script>
-
+<script>
+function myFunction() {
+    confirm("Press a button!");
+}
+</script>
 </body>
 </html>

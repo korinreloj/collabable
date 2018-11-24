@@ -1,0 +1,115 @@
+.upload_button{
+	@include tablet{
+		margin-left: 8vw;
+	}
+
+	@include desktop{
+		margin-left: 23vw;
+	}
+}
+
+.document_header{
+	margin-left: -7vw;
+
+	@include tablet{
+		margin-left: 22vw;
+	}
+}
+
+.document_layout{
+	margin-top: rem(32);
+
+	@include tablet{  
+	    width: 45vw;
+	    margin-left: 20vw;
+	    padding: rem(19.8);
+
+	    input{
+	      width: 45vw;
+	    }
+	}
+
+	input[name="search_document"]{
+		font-size: rem(14);
+		font-family: $font-montserrat;
+		background-color: red;
+		width: 76vw;
+	    border: none;
+	    background-color: $color-grey-input;
+	    height: rem(20);
+	    padding: rem(15);
+	    display: flex;
+
+	    @include tablet{
+	    	width: 69vw;
+	    }
+
+	    @include desktop{
+	    	font-size: rem(16);
+	    	padding: rem(18);
+	    	width: 71vw;
+	    }
+	}
+
+	.document_container{
+		display: block;
+		width: 76vw;
+		margin-top: rem(48);
+
+		@include tablet{
+			display: grid;
+			width: 0;
+			grid-template-columns: 36vw 36vw; 
+		}
+
+		@include desktop{
+			grid-template-columns: 38vw 38vw;
+		}
+
+		.document_card{
+			margin-bottom: rem(40);
+			box-shadow: rem(15) rem(10) rgba(0,0,0, 0.2);
+
+			@include tablet{
+				width: 32vw;
+				margin-right: 5vw;
+			}
+
+			.icon_container{
+				background-color: $color-grey-input;
+				img{
+					width: 32vw;
+
+					@include tablet{
+						width: rem(100);
+					}
+
+					@include desktop{
+						width: rem(140);
+					}
+				}
+			}
+
+			.document_name{
+				display: inline-flex;
+				color: $color-white;
+				font-size: rem(14);
+				font-family: $font-montserrat;
+				line-height: rem(45);
+				background-color: $color-red-button;
+				width: 76vw;
+				justify-content: center;
+
+				@include tablet{
+					width: 32vw;
+				}
+				
+				img{
+					height: rem(18);
+					padding: rem(13);
+				}		
+			}
+		}
+
+	}
+}
