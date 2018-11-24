@@ -720,6 +720,8 @@ main {
   @media (min-width: 768px) {
     .users_header {
       margin-left: 25vw; } }
+  .users_header .add_user {
+    margin-top: 3.125rem; }
 
 .users_content {
   margin-left: -2.5rem; }
