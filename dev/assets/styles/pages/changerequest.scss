@@ -132,8 +132,6 @@
     display: table;
     clear: both;
   }
-
-
 }
 
 .file_link{
@@ -316,11 +314,11 @@
 }
 
 .pending_title, .pending_card{
-  background-color: $color-grey-pending;
+  background-color: $color-red-button;
 }
 
-.approved_card{
-  background-color: $color-red-button;
+.approved_title, .approved_card{
+  background-color: $color-grey-pending;
 
   .change_title{
     @include tablet{

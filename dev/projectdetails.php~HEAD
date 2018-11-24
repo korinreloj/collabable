@@ -50,7 +50,14 @@ require "createProjectController.php";
         <div class="sidebar_divider"></div>
         <div class="sidebar_content">
             <ul>
-                <li class=""><a href="homepage.php">Home</a></li>
+                <li class=""><a href="homepage.php"> Back to Home</a></li>
+                <li class=""><a href="">Progress</a></li>
+                <li class="active_tab"><a href="">Project Details</a></li>
+                <li class=""><a href="">Task Boards</a></li>
+                <li class=""><a href="">Calendar</a></li>
+                <li class=""><a href="">Change Requests</a></li>
+                <li class=""><a href="">Chat Room</a></li>
+                <li class=""><a href="">Documents</a></li>
             </ul>
         </div>
         <a href="index.php">
@@ -67,15 +74,12 @@ require "createProjectController.php";
         <div class ="line_layout fixed_line">
             <div class="dot_pattern"></div>
             <div class="project_header">
-                <h2 class="module_title">Projects</h2>
+                <h2 class="module_title">Project Details</h2>
             </div>
         </div>
 
         <form method="POST">
-            <div class="form_title">
-                Create New Project
-            </div>
-            <div class="form_content">
+            <div class="profile_content">
                 <h4>Title</h4>
                 <input type="text" name="new-project_title" id="new-project_title" value="" required>
 
@@ -84,8 +88,6 @@ require "createProjectController.php";
 
 
                 <h4>Add Members</h4>
-                <!-- <input type="text" name="new-project_members" id="new-project_members" placeholder="Search for members...">
-                <button class="add_member" name="add_member">ADD MEMBER</button> -->
                 <table id="example" class="display" cellspacing="0" width="100%">
                     <thead>
                     <tr>
@@ -94,6 +96,7 @@ require "createProjectController.php";
                     </tr>
                     </thead>
                     <tbody>
+<<<<<<< HEAD:dev/createproject.php:dev/createproject.php
                     <!-- <tr>
                         <td><input type="checkbox"style="width: 4.3vw;"></td>
                         <td>Corinne Reloj</td>
@@ -103,6 +106,8 @@ require "createProjectController.php";
                         <td style="width: 40vw;">Aloy Chua</td>
                     </tr>
                      -->
+=======
+>>>>>>> master:dev/projectdetails.php:dev/projectdetails.php
                     <?php
 
                     require_once "config.php";
@@ -157,11 +162,7 @@ require "createProjectController.php";
                     </div>
                 </div>
 
-                <div class="form_buttons">
-                    <button class="cancel_project">Cancel</button>
-
-                    <button class="create_project" type="submit" id="submit" name="submit">Confirm</button>
-                </div>
+                <button class="save_changes" type="submit" name="submit">Save Changes</button>
             </div>
         </form>
 
