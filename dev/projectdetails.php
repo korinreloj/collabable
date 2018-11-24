@@ -50,8 +50,14 @@ require "createProjectController.php";
         <div class="sidebar_divider"></div>
         <div class="sidebar_content">
             <ul>
-                <li class=""><a href="homepage.php">Home</a></li>
-                <li><a href="">Users</a></li>
+                <li class=""><a href="homepage.php"> Back to Home</a></li>
+                <li class=""><a href="">Progress</a></li>
+                <li class="active_tab"><a href="">Project Details</a></li>
+                <li class=""><a href="">Task Boards</a></li>
+                <li class=""><a href="">Calendar</a></li>
+                <li class=""><a href="">Change Requests</a></li>
+                <li class=""><a href="">Chat Room</a></li>
+                <li class=""><a href="">Documents</a></li>
             </ul>
         </div>
         <a href="index.php">
@@ -68,44 +74,28 @@ require "createProjectController.php";
         <div class ="line_layout fixed_line">
             <div class="dot_pattern"></div>
             <div class="project_header">
-                <h2 class="module_title">Closed Project</h2>
+                <h2 class="module_title">Project Details</h2>
             </div>
         </div>
 
         <form method="POST">
             <div class="profile_content">
                 <h4>Title</h4>
-                <input type="text" name="closed-project_title" id="closed-project_title" value="" readonly>
+                <input type="text" name="new-project_title" id="new-project_title" value="" required>
 
                 <h4>Description</h4>
-                <textarea class="closed-project_description" name="closed-project_description" readonly></textarea>
+                <textarea class="new-project_description" name="new-project_description" required></textarea>
 
-                <h4>Lessons Learned</h4>
-                <textarea class="closed-project_lessons" name="closed-project_lessons" readonly></textarea>
 
-                <div id="date_closed">
-                    <h4 id="date_closed-header">Date Closed</h4>
-                    <input type="date" name="closed-project_date" id="closed-project_date" value="" readonly>
-                </div>
-
-                <h4>Members</h4>
+                <h4>Add Members</h4>
                 <table id="example" class="display" cellspacing="0" width="100%">
                     <thead>
-                        <tr>
-                            <th style="width: 4.3vw;"></th>
-                            <th>Name</th>
-                        </tr>
+                    <tr>
+                        <th style="width: 4.3vw;"></th>
+                        <th style="width: 40vw;">Name</th>
+                    </tr>
                     </thead>
                     <tbody>
-                    <!-- <tr>
-                        <td><input type="checkbox"style="width: 4.3vw;"></td>
-                        <td>Corinne Reloj</td>
-                    </tr>                    
-                    <tr>
-                        <td><input type="checkbox"style="width: 4.3vw;"></td>
-                        <td>Aloy Chua</td>
-                    </tr>
-                     -->
                     <?php
 
                     require_once "config.php";
@@ -118,12 +108,12 @@ require "createProjectController.php";
                         $name = $row['employeeName'];
                     ?>
                     <tr>
-                        <td style="width: 4.3vw;"><input type="checkbox" name="members[]" value="<?php echo $id; ?>"></td>
-                        <td><?php echo $name; ?></td>
+                        <td style="width: 4.3vw;"><input type="checkbox" name="members[]" value="<?php echo $id; ?>" style="width: 4.3vw;"></td>
+                        <td style="width: 40vw;"><?php echo $name; ?></td>
                     </tr>
 
                     <?php   }  ?>
- 
+
                     </tbody>
                 </table>
 
@@ -131,35 +121,36 @@ require "createProjectController.php";
                 <div class="lifecycle">
                     <div class="phases">
                         <h4>Phases</h4>
-                        <input type="text" name="closed-project_phases" class="closed-project_phases" value="Initiation" readonly>
+                        <input type="text" name="new-project_phases" class="new-project_phases" value="Initiation" readonly>
 
-                        <input type="text" name="closed-project_phases" class="closed-project_phases" value="Planning" readonly>
+                        <input type="text" name="new-project_phases" class="new-project_phases" value="Planning" readonly>
 
-                        <input type="text" name="closed-project_phases" class="closed-project_phases" value="Execution" readonly>
+                        <input type="text" name="new-project_phases" class="new-project_phases" value="Execution" readonly>
 
-                        <input type="text" name="closed-project_phases" class="closed-project_phases" value="Closing" readonly>
+                        <input type="text" name="new-project_phases" class="new-project_phases" value="Closing" readonly>
                     </div>
 
                     <div class="estimation">
                         <h4 class="estimated_date">Estimated Date</h4>
-                        <input type="date" name="closed-project_start1" class="closed-project_start1" value="Execution" readonly>
+                        <input type="date" name="new-project_start1" class="new-project_start1" value="Execution" required>
                         -
-                        <input type="date" name="closed-project_end1" class="closed-project_end1" value="Execution" readonly>
+                        <input type="date" name="new-project_end1" class="new-project_end1" value="Execution" required>
 
-                        <input type="date" name="closed-project_start2" class="closed-project_start2" value="Execution" readonly>
+                        <input type="date" name="new-project_start2" class="new-project_start2" value="Execution" required>
                         -
-                        <input type="date" name="closed-project_end2" class="closed-project_end2" value="Execution" readonly>
+                        <input type="date" name="new-project_end2" class="new-project_end2" value="Execution" required>
 
-                        <input type="date" name="closed-project_start3" class="closed-project_start3" value="Execution" readonly>
+                        <input type="date" name="new-project_start3" class="new-project_start3" value="Execution" required>
                         -
-                        <input type="date" name="new-project_end3" class="new-project_end3" value="Execution" readonly>
+                        <input type="date" name="new-project_end3" class="new-project_end3" value="Execution" required>
 
-                        <input type="date" name="closed-project_start4" class="closed-project_start4" value="Execution" readonly>
+                        <input type="date" name="new-project_start4" class="new-project_start4" value="Execution" required>
                         -
-                        <input type="date" name="closed-project_end4" class="closed-project_end4" value="Execution" readonly>
+                        <input type="date" name="new-project_end4" class="new-project_end4" value="Execution" required>
                     </div>
                 </div>
-                <button class="save_changes" type="submit" name="submit">print details</button>
+
+                <button class="save_changes" type="submit" name="submit">Save Changes</button>
             </div>
         </form>
 
